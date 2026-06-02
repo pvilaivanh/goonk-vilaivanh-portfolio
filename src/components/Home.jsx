@@ -8,11 +8,13 @@ function Home() {
           <span className="eyebrow">Photography & Videography Portfolio</span>
           <h1>Goonk Vilaivanh</h1>
           <p>
-            Photographer and videographer with experience in automotive, wedding, branded, 
-            and social media content production. Skilled in camera operation, gimbal operation, 
-            lighting design, story-boarding, set design, directing, color grading, and 
-            post-production using DaVinci Resolve, Adobe Lightroom and Photoshop. Based in 
-            Charlotte, NC while being available to travel or relocate.
+            Creative and results-driven videographer and photographer with experience in automotive, 
+            wedding, branded, interviews, and social media content production. Skilled in camera and 
+            gimbal operation, lighting design, story-boarding, set design, directing, and color grading. 
+            Proficiency in using DaVinci Resolve, Adobe Lightroom and Photoshop for editing in post-production. 
+            Proven success in growing engagement with photo and video campaigns, Meta advertising, and 
+            short-form social media reels. Passionate in visual storytelling through long-form media on 
+            YouTube and documentaries. Based in Charlotte, NC and is available to travel or relocate.
           </p>
           <div className="hero-actions">
             <a href="/contact" className="button button-primary">

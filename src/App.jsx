@@ -21,7 +21,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router basename="/goonk-vilaivanh-portfolio">
+    <Router>
       <div className="App">
         <header className="site-header">
           <div className="brand-wrap">

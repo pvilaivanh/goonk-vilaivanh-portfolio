@@ -17,8 +17,8 @@ const automotivePhotoModules = import.meta.glob(
   },
 );
 
-const headSpaPhotoModules = import.meta.glob(
-  "../assets/HeadSpa/*.{jpg,jpeg,png,webp}",
+const servicesPhotoModules = import.meta.glob(
+  "../assets/Services/*.{jpg,jpeg,png,webp}",
   {
     eager: true,
     import: "default",
@@ -64,7 +64,7 @@ const buildPhotos = (modules) =>
 
 const heritagePhotos = buildPhotos(heritagePhotoModules);
 const automotivePhotos = buildPhotos(automotivePhotoModules);
-const headSpaPhotos = buildPhotos(headSpaPhotoModules);
+const servicesPhotos = buildPhotos(servicesPhotoModules);
 const productsPhotos = buildPhotos(productsPhotoModules);
 const celebrationPhotos = buildPhotos(celebrationPhotoModules);
 const interviewsPhotos = buildPhotos(interviewsPhotoModules);
@@ -83,10 +83,10 @@ const albums = [
     photos: automotivePhotos,
   },
   {
-    title: "HeadSpa",
-    path: "/photos/headspa",
-    description: "Open the complete photo list from the HeadSpa shoot.",
-    photos: headSpaPhotos,
+    title: "Services",
+    path: "/photos/services",
+    description: "Open the complete photo list from the Services shoot.",
+    photos: servicesPhotos,
   },
   {
     title: "Products",
@@ -200,7 +200,7 @@ function PhotoGallery({ album }) {
 
 const heritageAlbum = albums[0];
 const automotiveAlbum = albums[1];
-const headSpaAlbum = albums[2];
+const servicesAlbum = albums[2];
 const productsAlbum = albums[3];
 const celebrationAlbum = albums[4];
 const interviewsAlbum = albums[5];
@@ -230,8 +230,8 @@ export function AutomotivePhotos() {
   return <PhotoGallery album={automotiveAlbum} />;
 }
 
-export function HeadSpaPhotos() {
-  return <PhotoGallery album={headSpaAlbum} />;
+export function ServicesPhotos() {
+  return <PhotoGallery album={servicesAlbum} />;
 }
 
 export function ProductsPhotos() {

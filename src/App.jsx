@@ -11,7 +11,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Photos, {
   AutomotivePhotos,
-  HeadSpaPhotos,
+  ServicesPhotos,
   HeritageInvitationalPhotos,
   ProductsPhotos,
   CelebrationPhotos,
@@ -58,7 +58,7 @@ function App() {
               element={<HeritageInvitationalPhotos />}
             />
             <Route path="/photos/automotive" element={<AutomotivePhotos />} />
-            <Route path="/photos/headspa" element={<HeadSpaPhotos />} />
+            <Route path="/photos/services" element={<ServicesPhotos />} />
             <Route path="/photos/products" element={<ProductsPhotos />} />
             <Route path="/photos/celebration" element={<CelebrationPhotos />} />
             <Route path="/photos/interviews" element={<InterviewsPhotos />} />

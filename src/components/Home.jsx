@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import profile1 from "../assets/profile1.jpg";
 
 function Home() {
@@ -17,12 +18,12 @@ function Home() {
             YouTube and documentaries. Based in Charlotte, NC and is available to travel or relocate.
           </p>
           <div className="hero-actions">
-            <a href="/contact" className="button button-primary">
+            <Link to="/contact" className="button button-primary">
               Book a Consultation
-            </a>
-            <a href="/projects" className="button button-secondary">
+            </Link>
+            <Link to="/projects" className="button button-secondary">
               View More Work
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -19,9 +19,12 @@ import Photos, {
 } from "./components/Photos";
 import "./App.css";
 
+const repoBase = "/goonk-vilaivanh-portfolio";
+const routerBase = window.location.pathname.startsWith(repoBase) ? repoBase : "";
+
 function App() {
   return (
-    <Router>
+    <Router basename={routerBase}>
       <div className="App">
         <header className="site-header">
           <div className="brand-wrap">

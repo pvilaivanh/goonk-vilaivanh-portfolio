@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirecting...</title>
     <script>
+      var repoBase = "/goonk-vilaivanh-portfolio";
+      var redirectBase = location.pathname.indexOf(repoBase) === 0
+        ? repoBase + "/"
+        : "/";
+
       sessionStorage.setItem(
         "github-pages-redirect",
         location.pathname + location.search + location.hash,
       );
-      location.replace("/");
+      location.replace(redirectBase);
     </script>
   </head>
   <body></body>

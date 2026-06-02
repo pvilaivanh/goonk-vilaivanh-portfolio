@@ -41,6 +41,14 @@ const celebrationPhotoModules = import.meta.glob(
   },
 );
 
+const interviewsPhotoModules = import.meta.glob(
+  "../assets/Interviews/*.{jpg,jpeg,png,webp}",
+  {
+    eager: true,
+    import: "default",
+  },
+);
+
 const buildPhotos = (modules) =>
   Object.entries(modules)
     .sort(([firstPath], [secondPath]) =>
@@ -59,6 +67,7 @@ const automotivePhotos = buildPhotos(automotivePhotoModules);
 const headSpaPhotos = buildPhotos(headSpaPhotoModules);
 const productsPhotos = buildPhotos(productsPhotoModules);
 const celebrationPhotos = buildPhotos(celebrationPhotoModules);
+const interviewsPhotos = buildPhotos(interviewsPhotoModules);
 
 const albums = [
   {
@@ -90,7 +99,13 @@ const albums = [
     path: "/photos/celebration",
     description: "Open the complete photo list from the Celebration of Life shoot.",
     photos: celebrationPhotos,
-  }
+  },
+  {
+    title: "Interviews",
+    path: "/photos/interviews",
+    description: "Open the complete photo list from the Interviews shoot.",
+    photos: interviewsPhotos,
+  },
 ];
 
 function PhotoCollageLink({ album }) {
@@ -188,6 +203,7 @@ const automotiveAlbum = albums[1];
 const headSpaAlbum = albums[2];
 const productsAlbum = albums[3];
 const celebrationAlbum = albums[4];
+const interviewsAlbum = albums[5];
 
 function Photos() {
   return (
@@ -224,6 +240,10 @@ export function ProductsPhotos() {
 
 export function CelebrationPhotos() {
   return <PhotoGallery album={celebrationAlbum} />;
+}
+
+export function InterviewsPhotos() {
+  return <PhotoGallery album={interviewsAlbum} />;
 }
 
 export default Photos;

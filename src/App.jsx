@@ -15,6 +15,7 @@ import Photos, {
   HeritageInvitationalPhotos,
   ProductsPhotos,
   CelebrationPhotos,
+  InterviewsPhotos,
 } from "./components/Photos";
 import "./App.css";
 
@@ -60,6 +61,7 @@ function App() {
             <Route path="/photos/headspa" element={<HeadSpaPhotos />} />
             <Route path="/photos/products" element={<ProductsPhotos />} />
             <Route path="/photos/celebration" element={<CelebrationPhotos />} />
+            <Route path="/photos/interviews" element={<InterviewsPhotos />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

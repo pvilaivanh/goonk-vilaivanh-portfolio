@@ -17,8 +17,7 @@ function Experience() {
           </div>
           <ul>
             <li>
-              Help grow Instagram account to 30K followers with stunning visuals
-              in photos and video while working closely with marketing team
+              Help grow Instagram account to 30K followers within 2 years with engaging photos and videos working closely with marketing team
             </li>
             <li>
               Capture and produce video content for long form media on YouTube,
@@ -41,7 +40,7 @@ function Experience() {
             </li>
             <li>Story boarding for long-form documentary video</li>
             <li>
-              Published with Salon Today
+              Published photos with Salon Today
               <br />
               <a
                 className="article-link"

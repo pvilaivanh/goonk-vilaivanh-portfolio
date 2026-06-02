@@ -109,7 +109,7 @@ const albums = [
 ];
 
 function PhotoCollageLink({ album }) {
-  const collagePhotos = album.photos.slice(0, 6);
+  const collagePhotos = album.photos.slice(0, 4);
 
   return (
     <Link

@@ -9,6 +9,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Photos, { HeritageInvitationalPhotos } from "./components/Photos";
 import "./App.css";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <NavLink to="/about">About</NavLink>
             <NavLink to="/experience">Experience</NavLink>
             <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/photos">Photos</NavLink>
             <NavLink to="/contact">Contact</NavLink>
           </nav>
         </header>
@@ -43,6 +45,11 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/photos" element={<Photos />} />
+            <Route
+              path="/photos/heritage-invitational"
+              element={<HeritageInvitationalPhotos />}
+            />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

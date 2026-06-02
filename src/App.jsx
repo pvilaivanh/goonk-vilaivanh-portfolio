@@ -9,7 +9,12 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
-import Photos, { HeritageInvitationalPhotos } from "./components/Photos";
+import Photos, {
+  AutomotivePhotos,
+  HeadSpaPhotos,
+  HeritageInvitationalPhotos,
+  ProductsPhotos,
+} from "./components/Photos";
 import "./App.css";
 
 function App() {
@@ -50,6 +55,9 @@ function App() {
               path="/photos/heritage-invitational"
               element={<HeritageInvitationalPhotos />}
             />
+            <Route path="/photos/automotive" element={<AutomotivePhotos />} />
+            <Route path="/photos/headspa" element={<HeadSpaPhotos />} />
+            <Route path="/photos/products" element={<ProductsPhotos />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

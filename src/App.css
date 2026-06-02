@@ -216,12 +216,17 @@
   margin-top: 28px;
 }
 
+.photo-album-grid {
+  display: grid;
+  gap: 22px;
+  margin-top: 30px;
+}
+
 .photo-collage-link {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(220px, 0.72fr);
   gap: 18px;
   align-items: center;
-  margin-top: 30px;
   max-width: 760px;
   padding: 14px;
   border-radius: 18px;
